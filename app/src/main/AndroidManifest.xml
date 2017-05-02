@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.india.chemistry">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FifthActivity"
+            android:label="@string/title_activity_fifth">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.FifthActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Alkalinity"
+            android:label="@string/title_activity_alkalinity">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.Alkalinity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nernst_activity"
+            android:label="@string/title_activity_nernst_activity">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.nernst_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterHardness"
+            android:label="@string/title_activity_water_hardness">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.WaterHardness" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".COD"
+            android:label="@string/title_activity_cod">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.COD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Copper_in_Brass"
+            android:label="@string/title_activity_copper_in__brass">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.Copper_in_Brass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HametiteOre"
+            android:label="@string/title_activity_hametite_ore">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.HaemetiteOre" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Colourimetric_Copper"
+            android:label="@string/title_activity_colourimetric__copper">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.Colourimetric_Copper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Potentiometry_fas"
+            android:label="@string/title_activity_potentiometry_fas">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.Potentiometry_fas" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Conductometry"
+            android:label="@string/title_activity_conductometry">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.Conductometry" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pka"
+            android:label="@string/title_activity_pka">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.pka" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WaterHardness_viva"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_water_hardness_viva" />
+        <activity
+            android:name=".Intro"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_intro" />
+        <activity android:name=".flame_photometry">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.flame_photometry" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Viscosity">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.Viscosity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CementCao"
+            android:label="@string/title_activity_cement_cao">
+            <intent-filter>
+                <action android:name="com.example.india.chemistry.CementCao" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
