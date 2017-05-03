@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.india.chemistry.Haematite_ore_formula">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/iron_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/iron_header_text" />
+
+        <TextView
+            android:id="@+id/iron_salt_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_header"
+            android:layout_marginTop="25dp"
+            android:padding="5dp"
+            android:text="@string/iron_salt_weight_text"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/iron_saltweight_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iron_salt_weight"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_toEndOf="@+id/iron_salt_weight"
+            android:layout_toRightOf="@+id/iron_salt_weight"
+            android:hint="W"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/iron_normality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_saltweight_input"
+            android:layout_marginTop="25dp"
+            android:onClick="normality_iron"
+            android:text="@string/iron_normality_text" />
+
+        <TextView
+            android:id="@+id/iron_normality_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iron_normality"
+            android:layout_alignEnd="@+id/iron_saltweight_input"
+            android:layout_alignRight="@+id/iron_saltweight_input"
+            android:layout_alignTop="@+id/iron_normality"
+            android:layout_toRightOf="@+id/iron_salt_weight"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/iron_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_normality"
+            android:layout_marginTop="36dp"
+            android:layout_toLeftOf="@+id/iron_normality_result"
+            android:layout_toStartOf="@+id/iron_normality_result"
+            android:padding="5dp"
+            android:text="@string/iron_volume_text"
+            android:textIsSelectable="false"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/iron_volume_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/iron_normality_result"
+            android:layout_alignLeft="@+id/iron_normality_result"
+            android:layout_alignRight="@+id/iron_normality_result"
+            android:layout_alignStart="@+id/iron_normality_result"
+            android:layout_alignTop="@+id/iron_volume"
+            android:hint="V"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/iron_equivalent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_volume_input"
+            android:layout_marginTop="30dp"
+            android:text="@string/irom_equivalent_text"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/iron_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/iron_normality"
+            android:layout_alignRight="@+id/iron_normality"
+            android:layout_below="@+id/iron_equivalent"
+            android:layout_marginTop="30dp"
+            android:nestedScrollingEnabled="false"
+            android:onClick="iron_amount"
+            android:text="@string/iron_amount_text" />
+
+        <TextView
+            android:id="@+id/iron_amount_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iron_amount"
+            android:layout_alignEnd="@+id/iron_volume_input"
+            android:layout_alignRight="@+id/iron_volume_input"
+            android:layout_alignTop="@+id/iron_amount"
+            android:layout_toRightOf="@+id/iron_volume"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/iron_25cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_amount"
+            android:layout_marginTop="26dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/iron_250cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_25cm3"
+            android:layout_marginTop="31dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/iron_haemetitewieght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_250cm3"
+            android:layout_marginTop="22dp"
+            android:text="@string/iron_haemetiteweight_text"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/iron_haemetiteweight_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iron_haemetitewieght"
+            android:layout_toEndOf="@+id/iron_haemetitewieght"
+            android:layout_toRightOf="@+id/iron_haemetitewieght"
+            android:hint="W"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/iron_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iron_haemetitewieght"
+            android:layout_marginTop="40dp"
+            android:onClick="percentage_iron"
+            android:text="@string/iron_percentage_text" />
+
+        <TextView
+            android:id="@+id/iron_percentage_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iron_haemetiteweight_input"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/iron_haemetiteweight_input"
+            android:layout_alignTop="@+id/iron_percentage" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

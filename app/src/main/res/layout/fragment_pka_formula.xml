@@ -1,0 +1,557 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.india.chemistry.pka_formula">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pka_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/header_pka"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TableLayout
+            android:id="@+id/table_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pka_header">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/volume_heading"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="Volume of NaOH" />
+
+                <TextView
+                    android:id="@+id/ph_heading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="pH" />
+
+                <TextView
+                    android:id="@+id/delta_ph"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="@string/delta_ph" />
+
+                <TextView
+                    android:id="@+id/delta_volume"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="@string/delta_volume" />
+
+                <TextView
+                    android:id="@+id/pka_ratio"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"
+                    android:text="@string/pka_ratio" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol1"
+                    android:padding="5dp"
+                    android:text="0" />
+
+                <EditText
+                    android:id="@+id/ph_value1"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph1"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume1"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio1"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol2"
+                    android:padding="5dp"
+                    android:text="0.5" />
+
+                <EditText
+                    android:id="@+id/ph_value2"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph2"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume2"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio2"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol3"
+                    android:padding="5dp"
+                    android:text="1" />
+
+                <EditText
+                    android:id="@+id/ph_value3"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph3"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume3"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio3"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol4"
+                    android:padding="5dp"
+                    android:text="1.5" />
+
+                <EditText
+                    android:id="@+id/ph_value4"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph4"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume4"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio4"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol5"
+                    android:padding="5dp"
+                    android:text="2" />
+
+                <EditText
+                    android:id="@+id/ph_value5"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph5"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume5"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio5"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol6"
+                    android:padding="5dp"
+                    android:text="2.5" />
+
+                <EditText
+                    android:id="@+id/ph_value6"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph6"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume6"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio6"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol7"
+                    android:padding="5dp"
+                    android:text="3" />
+
+                <EditText
+                    android:id="@+id/ph_value7"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph7"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume7"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio7"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol8"
+                    android:padding="5dp"
+                    android:text="3.5" />
+
+                <EditText
+                    android:id="@+id/ph_value8"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph8"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume8"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio8"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol9"
+                    android:padding="5dp"
+                    android:text="4" />
+
+                <EditText
+                    android:id="@+id/ph_value9"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph9"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume9"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio9"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol10"
+                    android:padding="5dp"
+                    android:text="4.5" />
+
+                <EditText
+                    android:id="@+id/ph_value10"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph10"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume10"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio10"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol11"
+                    android:padding="5dp"
+                    android:text="5" />
+
+                <EditText
+                    android:id="@+id/ph_value11"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph11"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume11"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio11"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol12"
+                    android:padding="5dp"
+                    android:text="5.5" />
+
+                <EditText
+                    android:id="@+id/ph_value12"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph12"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume12"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio12"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol13"
+                    android:padding="5dp"
+                    android:text="6" />
+
+                <EditText
+                    android:id="@+id/ph_value13"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph13"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume13"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio13"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol14"
+                    android:padding="5dp"
+                    android:text="6.5" />
+
+                <EditText
+                    android:id="@+id/ph_value14"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph14"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume14"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio14"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol15"
+                    android:padding="5dp"
+                    android:text="7" />
+
+                <EditText
+                    android:id="@+id/ph_value15"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph15"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume15"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio15"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol16"
+                    android:padding="5dp"
+                    android:text="7.5" />
+
+                <EditText
+                    android:id="@+id/ph_value16"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph16"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume16"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio16"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol17"
+                    android:padding="5dp"
+                    android:text="8" />
+
+                <EditText
+                    android:id="@+id/ph_value17"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph17"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume17"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio17"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/pka_vol18"
+                    android:padding="5dp"
+                    android:text="8.5" />
+
+                <EditText
+                    android:id="@+id/ph_value18"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_ph18"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/delta_volume18"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/pka_ratio18"
+                    android:padding="5dp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/graph4_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_4"
+            android:onClick="create_graph_4"
+            android:padding="5dp"
+            android:text="GRAPH" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/pka_graph"
+            android:layout_width="match_parent"
+            android:layout_height="400dip"
+            android:layout_below="@id/graph4_button"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Chemistry</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second_">Second_Activity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_fifth">FifthActivity</string>
+    <string name="title_activity_sixth">SixthActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_nernst_activity">nernst_activity</string>
+    <string name="title_activity_water_hardness">WaterHardness</string>
+    <string name="edta_equivalent">1000 cm<sup>3</sup> of 1M EDTA = 100g of CACO<sub>3</sub>.</string>
+    <string name="titration_text">Volume of EDTA in cm<sup>3</sup>: </string>
+    <string name="CACO3_calculation">Amount of CACO<sub>3</sub> present: </string>
+    <string name="CACO3_in_25cm3">25 cm<sup>3</sup> of hard water contains </string>
+    <string name="CACO3_in_25cm3_2">g of CaCO<sub>3</sub></string>
+    <string name="title_activity_cao_cement">CaoCement</string>
+    <string name="edta_equivalent_Cao">1000 cm<sup>3</sup> of 1M Edta = 56.08g of CaO</string>
+    <string name="CaO_titration_text">Volume of EDTA in cm<sup>3</sup>: </string>
+    <string name="CaO_calculation">Amount of CaO present:</string>
+    <string name="CaO_in_25cm3">25 cm<sup>3</sup> of cement solution contains </string>
+    <string name="CaO_in_25cm3_2"> g of Cao.</string>
+    <string name="CaO_in_250cm3">Therefore 250 cm<sup>3</sup> of cement solution contains </string>
+    <string name="CaO_in_250cm3_2"> g of CaO.</string>
+    <string name="cement_weight_text">Weight of cement in 250 cm<sup>3</sup>: </string>
+    <string name="title_activity_cod">COD</string>
+    <string name="header_text_cod">Determination of COD of the given Industrial Waste water sample </string>
+    <string name="salt_weight_text_cod">Weight of FAS salt:</string>
+    <string name="blank_titratin_text">Blank titration reading: </string>
+    <string name="FAS_volume_text">Volume of FAS in cm<sup>3</sup>: </string>
+    <string name="FAS_equivalent_oxygen_text">1000cm<sup>3</sup> of 1N FAS solution =1 equivalent of oxygen = 8g of oxygen </string>
+    <string name="amount_of_oxygen_text">Amount of Oxygen in (V1-V2) cm<sup>3</sup> of FAS:</string>
+    <string name="oxygen_in_25cm3">25cm<sup>3</sup> of waste water contains </string>
+    <string name="oxygen_in_25cm3_2">g of oxygen.</string>
+    <string name="Cod_result_text">COD of waste water sample (mg dm<sup>-3</sup>):</string>
+    <string name="title_activity_copper_in__brass">Copper_in_Brass</string>
+    <string name="CinB_header_text">Determination of Percentage of Copper in Brass using standardSodium thiosulphate solution.
+</string>
+    <string name="CinB_trial1_text">Trial 1</string>
+    <string name="trial_1_brass_weight_text">Weight of brass(in g) : </string>
+    <string name="NA2SO3_volume_text">Volume of NA<sub>2</sub>SO<sub>3</sub>: </string>
+    <string name="copper_equivalent_text">1000 cm<sup>3</sup> of 1N NA<sub>2</sub>SO<sub>3</sub> solution = 63.54 g of Copper</string>
+    <string name="amount_of_copper_text">Copper in V cm<sup>3</sup> (in g): </string>
+    <string name="CinB_normality">Normality: </string>
+    <string name="percentage_of_copper_text">Percentage of copper in brass : </string>
+    <string name="title_activity_alkalinity1">Alkalinity1</string>
+    <string name="header_alkalinity_text">Determination of total alkalinity of a given water sample using standard hydrochloric acid </string>
+    <string name="volume_of_HCL_text">Volume of HCl in cm<sup>3</sup>: </string>
+    <string name="Normality_of_HCL_text">Normality of HCl: </string>
+    <string name="CACO3_equivalent">1000 cm<sup>3</sup> of 1N HCl solution = 50g of CaCO<sub>3</sub>.</string>
+    <string name="amount_of_CACO3_text">Amount of CaCO<sub>3</sub>(in g): </string>
+    <string name="oxygen_equivalent_text">25 cm<sup>3</sup> of waste water sample contains</string>
+    <string name="oxygen_equivalent_text_2"> g of Oxygen.</string>
+    <string name="CACO3_litre">CaCO<sup>3</sup> per litre: </string>
+    <string name="alkalinity_result_text">Alkalinity of Water Sample (in ppm): </string>
+    <string name="title_activity_hametite_ore">HametiteOre</string>
+    <string name="iron_header_text">Determination of Iron in the given sample of Haematite ore solutionusing Potassium dichromate Crystals by external indicator method. </string>
+    <string name="iron_salt_weight_text">Weight of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> salt: </string>
+    <string name="iron_normality_text">Normality:  </string>
+    <string name="iron_volume_text">Volume of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>: </string>
+    <string name="irom_equivalent_text">1000 cm<sup>3</sup> of 1N K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> solution = 1 equivalent of iron = 55.85g of iron</string>
+    <string name="iron_amount_text">Amount of Iron (in g): </string>
+    <string name="iron_25cm3_text">25 cm<sup>3</sup> of haemetite ore solution contains </string>
+    <string name="iron_25cm3_text_2"> g of iron.</string>
+    <string name="iron_250cm3_text">250 cm<sup>3</sup> of haemetite ore solution contains</string>
+    <string name="iron_250cm3_text_2"> g of iron.</string>
+    <string name="iron_haemetiteweight_text">Weight of haemetite dissolved: </string>
+    <string name="iron_percentage_text">Percentage of iron</string>
+    <string name="title_activity_colourimetric__copper">Colourimetric_Copper</string>
+    <string name="colourimetry_header">Colourimetric Estimation of copper.</string>
+    <string name="CUSO4_weight">Weight of copper sulphate pentahydrate present in 100cm<sup>3</sup> of its solution:</string>
+    <string name="CUSO4_weight_1cm3">For 1cm<sup>3</sup>(W/100 g):  </string>
+    <string name="copper_equivalent_text_colourimetry">249.54 g of copper sulphate pentahydrate contains 63.54 g of Copper. </string>
+    <string name="copper_1cm3_text">Copper in 1cm<sup>3</sup>(g)</string>
+    <string name="table_header_text">CuSO<sub>4</sub> volume</string>
+    <string name="table_volume_1">2cm<sup>3</sup></string>
+    <string name="table_volume_2">4cm<sup>3</sup></string>
+    <string name="table_volume_3">6cm<sup>3</sup></string>
+    <string name="table_volume_4">8cm<sup>3</sup></string>
+    <string name="table_volume_5">10cm<sup>3</sup></string>
+    <string name="title_activity_potentiometry_fas">Potentiometry_fas</string>
+    <string name="potentiometry_header">Potentiometric estimation of FAS using Standard K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>.
+</string>
+    <string name="deltaE_string">\u0394E</string>
+    <string name="deltaV_String">\u0394V</string>
+    <string name="VbyE">\u0394E/\u0394V</string>
+    <string name="title_activity_conductometry">Conductometry</string>
+    <string name="header_conductometry">Conductometric estimation of acid mixture using standard NaOH solution.</string>
+    <string name="volume_NaOH">Volume of NaOH</string>
+    <string name="title_activity_pka">pka</string>
+    <string name="header_pka">Determination of pKa of a weak acid using Ph meter.</string>
+    <string name="delta_ph">\u0394pH</string>
+    <string name="delta_volume">\u0394V</string>
+    <string name="pka_ratio">\u0394pH/\u0394V</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_alkalinity">Alkalinity</string>
+    <string name="title_activity_cao_in_cement">CaoInCement</string>
+    <string name="title_activity_cement_cao">CementCao</string>
+    <string name="WH_question1"> 1) On boiling Mg(HCO<sub>3</sub>)<sub>2</sub> present in water forms </string>
+    <string name="title_activity_water_hardness_viva">WaterHardness_viva</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="flameHheader">Flame Photometric estimation of Sodium and Potassium in the given  sample of Water </string>
+    <string name="nacl_100cm">Weight of sodium chloride present in 100cm<sup>3</sup> of its solution: </string>
+    <string name="nacl_1cm">Sodium in 1cm<sup>3</sup>  = </string>
+    <string name="kcl_100cm">Weight of potassium chloride present in 100cm<sup>3</sup> of its solution:</string>
+    <string name="kcl_1cm">Potassium in 1cm<sup>3</sup> = </string>
+    <string name="mol_weights_nacl">Molecular weight of Sodium chloride= 58.5, atomic weight of Sodium=23 </string>
+    <string name="mol_weights_kcl">Molecular weight of Potassium chloride= 58.5, atomic weight of Potassium=23
+</string>
+    <string name="nacl_volume">Nacl\nVol.</string>
+    <string name="flame_reading">Photometer\nreadings</string>
+    <string name="volume1">10cm<sup>3</sup></string>
+    <string name="volume2">20cm<sup>3</sup></string>
+    <string name="volume3">30cm<sup>3</sup></string>
+    <string name="volume4">40cm<sup>3</sup></string>
+    <string name="volume5">50cm<sup>3</sup></string>
+    <string name="viscosityHeader">Determination of viscosity coefficient of given liquid using  Ostwald’s viscometer </string>
+    <string name="timeOfLiquid">Time of flow of given liquid (T<sub>l</sub>):</string>
+    <string name="timeOfWaterText">Time of flow of water (T<sub>w</sub>): </string>
+    <string name="labTempText">Laboratory Temperature: </string>
+    <string name="waterDensityText">Density of water at laboratory temperature in gcm<sup>3</sup>: </string>
+    <string name="waterViscosityText">Viscosity of water at laboratory temperature: </string>
+    <string name="liquidDensityText">Density of liquid at laboratory temperature(g/cm<sup>3</sup>)</string>
+    <string name="viscosityresultText">Viscosity of given liquid is (Nsm<sup>-1</sup>): </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login_activity">Sign In</string>
+</resources>

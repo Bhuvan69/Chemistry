@@ -1,0 +1,369 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context="com.example.india.chemistry.flame_formula">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+        <TextView
+            android:id="@+id/flameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/flameHheader"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+
+            android:id="@+id/nacl_100cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/flameHeader"
+            android:layout_marginTop="34dp"
+            android:text="@string/nacl_100cm" />
+
+        <EditText
+            android:id="@+id/nacl_100_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nacl_100cm"
+            android:layout_marginTop="10dp"
+            android:ems="5"
+            android:hint="(W)g"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/nacl_1cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nacl_100_input"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/nacl_1cm" />
+
+        <TextView
+            android:id="@+id/kcl_100cm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nacl_1cm"
+            android:text="@string/kcl_100cm" />
+
+        <EditText
+            android:id="@+id/kcl_100_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/kcl_100cm"
+            android:layout_marginTop="10dp"
+            android:hint="(W)g"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/kcl_1cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/kcl_100_input"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/kcl_1cm" />
+
+        <TextView
+            android:id="@+id/kcl_1cm_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/kcl_1cm"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/kcl_1cm"
+            android:layout_toEndOf="@+id/kcl_1cm"
+            android:layout_toRightOf="@+id/kcl_1cm" />
+
+        <TextView
+            android:id="@+id/mol_weights_kcl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mol_weights_nacl"
+            android:layout_marginTop="10dp"
+            android:text="@string/mol_weights_kcl" />
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mol_weights_kcl"
+            android:layout_marginTop="25dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nacl_volume"
+                    android:padding="5dp"
+                    android:text="@string/nacl_volume" />
+
+                <TextView
+                    android:id="@+id/weight_sodium"
+                    android:padding="5dp"
+                    android:text="Sodium\nweight" />
+
+                <TextView
+                    android:id="@+id/flame_reading_1"
+                    android:padding="5dp"
+                    android:text="@string/flame_reading" />
+
+                <TextView
+                    android:id="@+id/weight_sodium_2"
+                    android:padding="5dp"
+                    android:text="Potassium\nweight" />
+
+                <TextView
+                    android:id="@+id/flame_reading_2"
+                    android:padding="5dp"
+                    android:text="@string/flame_reading" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/volume1"
+                    android:padding="5dp"
+                    android:text="@string/volume1" />
+
+                <EditText
+                    android:id="@+id/NaWeight_1"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/NaReading_1"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KWeight_1"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KReading_1"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/volume2"
+                    android:padding="5dp"
+                    android:text="@string/volume2" />
+
+                <EditText
+                    android:id="@+id/NaWeight_2"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/NaReading_2"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KWeight_2"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KReading_2"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/volume3"
+                    android:padding="5dp"
+                    android:text="@string/volume3" />
+
+                <EditText
+                    android:id="@+id/NaWeight_3"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/NaReading_3"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KWeight_3"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KReading_3"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/volume4"
+                    android:padding="5dp"
+                    android:text="@string/volume4" />
+
+                <EditText
+                    android:id="@+id/NaWeight_4"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/NaReading_4"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KWeight_4"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KReading_4"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/volume5"
+                    android:padding="5dp"
+                    android:text="@string/volume5" />
+
+                <EditText
+                    android:id="@+id/NaWeight_5"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/NaReading_5"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KWeight_5"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/KReading_5"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:padding="5dp" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/graph_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_layout"
+            android:text="Graph 1"
+
+            />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph1"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_below="@id/graph_button1" />
+
+        <Button
+            android:id="@+id/graph_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/graph1"
+            android:text="Graph 2"
+
+            />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph2"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_below="@id/graph_button2" />
+
+        <TextView
+            android:id="@+id/nacl_1cm_result"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignTop="@+id/nacl_1cm"
+            android:layout_toEndOf="@+id/nacl_1cm"
+            android:layout_toRightOf="@+id/nacl_1cm"
+            android:padding="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/mol_weights_nacl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/kcl_1cm"
+            android:text="@string/mol_weights_nacl" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

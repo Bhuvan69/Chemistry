@@ -1,0 +1,368 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.india.chemistry.Conductometry_Formula">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/conductometry_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/header_conductometry"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TableLayout
+            android:id="@+id/table_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conductometry_header"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/NaOH_volume"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="@string/volume_NaOH"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/conductance_values"
+                    android:padding="5dp"
+                    android:text="Conductance"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol1"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance1"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol2"
+                    android:padding="5dp"
+                    android:text="0.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance2"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol3"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance3"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol4"
+                    android:padding="5dp"
+                    android:text="1.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance4"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol5"
+                    android:padding="5dp"
+                    android:text="2"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance5"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol6"
+                    android:padding="5dp"
+                    android:text="2.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance6"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol7"
+                    android:padding="5dp"
+                    android:text="3"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance7"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol8"
+                    android:padding="5dp"
+                    android:text="3.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance8"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol9"
+                    android:padding="5dp"
+                    android:text="4"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance9"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol10"
+                    android:padding="5dp"
+                    android:text="4.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance10"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol11"
+                    android:padding="5dp"
+                    android:text="5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance11"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol12"
+                    android:padding="5dp"
+                    android:text="5.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance12"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol13"
+                    android:padding="5dp"
+                    android:text="6"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance13"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol14"
+                    android:padding="5dp"
+                    android:text="6.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance14"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol15"
+                    android:padding="5dp"
+                    android:text="7"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance15"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol16"
+                    android:padding="5dp"
+                    android:text="7.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance16"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol17"
+                    android:padding="5dp"
+                    android:text="8"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance17"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol18"
+                    android:padding="5dp"
+                    android:text="8.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance18"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol19"
+                    android:padding="5dp"
+                    android:text="9"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance19"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/vol20"
+                    android:padding="5dp"
+                    android:text="9.5"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/conductance20"
+                    android:imeOptions="actionGo"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/graph3_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table_3"
+            android:layout_marginTop="20dp"
+            android:onClick="create_graph_3"
+            android:padding="5dp"
+            android:text="GRAPH" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/conductometry_graph"
+            android:layout_width="match_parent"
+            android:layout_height="400dip"
+            android:layout_below="@id/graph3_button" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

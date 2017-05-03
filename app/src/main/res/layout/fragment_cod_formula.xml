@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.india.chemistry.COD_formula">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/COD_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/header_text_cod"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/salt_weight_COD"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/salt_weight_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/salt_weight_input"
+            android:text="@string/salt_weight_text_cod"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/salt_weight_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/COD_header"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/salt_weight_COD"
+            android:hint="W"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/Normality_COD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/blank_titration_reading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/blank_titration_reading"
+            android:layout_below="@+id/salt_weight_input"
+            android:layout_marginTop="19dp"
+            android:onClick="normality"
+            android:text="Normality:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Normality_result_COD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Normality_COD"
+            android:layout_alignEnd="@+id/salt_weight_input"
+            android:layout_alignRight="@+id/salt_weight_input"
+            android:layout_alignTop="@+id/Normality_COD"
+            android:layout_toEndOf="@+id/Normality_COD"
+            android:layout_toRightOf="@+id/Normality_COD"
+            android:onClick="normality"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/FAS_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/blank_titration_reading"
+            android:layout_marginTop="27dp"
+            android:padding="5dp"
+            android:text="@string/FAS_volume_text" />
+
+        <EditText
+            android:id="@+id/FAS_volume_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/FAS_volume"
+            android:layout_alignEnd="@+id/Normality_result_COD"
+            android:layout_alignRight="@+id/Normality_result_COD"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toRightOf="@+id/FAS_volume"
+            android:hint="V2"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/FAS_equivalent_oxygen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/FAS_volume_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/FAS_volume_input"
+            android:layout_below="@+id/FAS_volume"
+            android:layout_marginTop="32dp"
+            android:padding="5dp"
+            android:text="@string/FAS_equivalent_oxygen_text" />
+
+        <TextView
+            android:id="@+id/blank_titration_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Normality_COD"
+            android:layout_marginTop="24dp"
+            android:padding="5dp"
+            android:text="@string/blank_titratin_text" />
+
+        <EditText
+            android:id="@+id/blank_titration_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/FAS_volume_input"
+            android:layout_alignLeft="@+id/FAS_volume_input"
+            android:layout_alignStart="@+id/FAS_volume_input"
+            android:ems="10"
+            android:hint="V1"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/amount_of_oxygen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/FAS_equivalent_oxygen"
+            android:layout_marginTop="28dp"
+            android:onClick="oxygen_amount"
+            android:text="@string/amount_of_oxygen_text" />
+
+        <TextView
+            android:id="@+id/amount_of_oxygen_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/amount_of_oxygen"
+            android:layout_marginTop="22dp"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/oxygen_for_25cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/amount_of_oxygen_result"
+            android:layout_marginTop="24dp"
+            android:text="New Text" />
+
+        <Button
+            android:id="@+id/Cod_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/oxygen_for_25cm3"
+            android:layout_marginTop="23dp"
+            android:onClick="result_cod"
+            android:text="@string/Cod_result_text" />
+
+        <TextView
+            android:id="@+id/cod_result_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Cod_result"
+            android:padding="5dp"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

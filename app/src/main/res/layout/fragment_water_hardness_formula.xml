@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titration_volume_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.india.chemistry.WaterHardnessFormula">
+
+    <TextView
+        android:id="@+id/header_WH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Determination of Total Hardness of Water Sample using Disodium salt of EDTA" />
+
+    <TextView
+        android:id="@+id/saltWeight_WH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_WH"
+        android:layout_marginTop="40dp"
+        android:text="Weight of EDTA salt(in g) :" />
+
+    <EditText
+        android:id="@+id/saltWeightInput_WH"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_WH"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/saltWeight_WH"
+        android:imeOptions="actionGo"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/compute_molarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saltWeight_WH"
+        android:layout_marginTop="40dp"
+        android:onClick="molarity_of_edta"
+        android:text="MOLARITY :" />
+
+    <TextView
+        android:id="@+id/molarity_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saltWeightInput_WH"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/compute_molarity"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/CACO3_equivalent_EDTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:padding="5dp"
+        android:text="@string/edta_equivalent"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/molarity_result"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/titration_volume_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/saltWeightInput_WH"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toStartOf="@+id/saltWeightInput_WH"
+        android:padding="5dp"
+        android:text="@string/titration_text" />
+
+    <EditText
+        android:id="@+id/titration_volume_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CACO3_equivalent_EDTA"
+        android:layout_alignLeft="@+id/saltWeightInput_WH"
+        android:layout_alignStart="@+id/saltWeightInput_WH"
+        android:layout_alignTop="@+id/titration_volume_text"
+        android:ems="10"
+        android:hint="V"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/CACO3_calculation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CACO3_equivalent_EDTA"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:onClick="amount_of_caco3"
+        android:padding="5dp"
+        android:text="@string/CACO3_calculation"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/CACO3_calculation_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CACO3_calculation_text"
+        android:layout_alignEnd="@+id/CACO3_equivalent_EDTA"
+        android:layout_alignRight="@+id/CACO3_equivalent_EDTA"
+        android:text="" />
+
+    <Button
+        android:id="@+id/hardness_calculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CACO3_calculation_result"
+        android:layout_marginTop="51dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:onClick="total_hardness"
+        android:text="Total Hardness of water in ppm : "
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/display_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hardness_calculation"
+        android:layout_margin="30dp"
+        android:layout_marginTop="21dp"
+        android:text=""
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/CACO3_for_25cm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/display_result"
+        android:layout_alignStart="@+id/display_result"
+        android:layout_below="@+id/CACO3_calculation_text"
+        android:text="" />
+
+
+</RelativeLayout>

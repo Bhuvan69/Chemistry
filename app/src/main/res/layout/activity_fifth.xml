@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#125688"
+    android:fillViewport="true"
+    tools:context="com.example.india.chemistry.FifthActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <TextView
+            android:id="@+id/nernst_eqation"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="nernst"
+            android:text="Nernst Equation"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:src="@drawable/test_tube" />
+
+        <TextView
+            android:id="@+id/hardnessofwater"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/icon1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="waterhardness"
+            android:text="Water Hardness"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Cao_in_cement_sample"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/hardnessofwater"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="determinationOfCao"
+            android:text="CaO in Cement"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/COD"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Cao_in_cement_sample"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="COD_waste_water"
+            android:text="COD"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/copper_in_brass"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/COD"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="C_in_B"
+            android:text="Copper in Brass"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/alkalinity"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/copper_in_brass"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="alkalinity"
+            android:text="Alkalinity"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Iron"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/alkalinity"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="haematite_ore"
+            android:text="Haematite Ore"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/cu_colourimetry"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Iron"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="colourimetry_copper"
+            android:text=" Colourimetry"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/potentiometry"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/cu_colourimetry"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="potentiometry_fas"
+            android:text=" Potentiometry"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/conductometry"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/potentiometry"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="conductometry"
+            android:text=" Conductometry"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/pka"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/conductometry"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="pka"
+            android:text=" pKa"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/flame"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/pka"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="flame"
+            android:text=" Flame Photometry"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Viscosity"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/flame"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="viscosity"
+            android:text="Viscosity"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.india.chemistry.CementCaoFormula">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header_Cao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Determination of CaO in the given sample of cement by rapid EDTA method" />
+
+        <TextView
+            android:id="@+id/saltWeight_Cao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_Cao"
+            android:layout_marginTop="40dp"
+            android:text="Weight of EDTA salt(in g) :" />
+
+        <EditText
+            android:id="@+id/saltWeightInput_Cao"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_Cao"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/saltWeight_Cao"
+            android:imeOptions="actionGo"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <Button
+            android:id="@+id/compute_molarity_Cao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saltWeight_Cao"
+            android:layout_marginTop="40dp"
+            android:onClick="molarity_of_edta_Cao"
+            android:text="MOLARITY :" />
+
+        <TextView
+            android:id="@+id/molarity_result_Cao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saltWeightInput_Cao"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/compute_molarity_Cao"
+            android:textAlignment="center"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/CaO_equivalent_EDTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:padding="5dp"
+            android:text="@string/edta_equivalent_Cao"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/molarity_result_Cao"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/CaO_titration_volume_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toLeftOf="@+id/saltWeightInput_Cao"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toStartOf="@+id/saltWeightInput_Cao"
+            android:padding="5dp"
+            android:text="@string/CaO_titration_text" />
+
+        <EditText
+            android:id="@+id/CaO_titration_volume_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/CaO_equivalent_EDTA"
+            android:layout_alignLeft="@+id/saltWeightInput_Cao"
+            android:layout_alignStart="@+id/saltWeightInput_Cao"
+            android:layout_alignTop="@+id/CaO_titration_volume_text"
+            android:ems="10"
+            android:hint="V"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/CaO_calculation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/CaO_equivalent_EDTA"
+            android:layout_marginTop="29dp"
+            android:onClick="amount_of_cao"
+            android:padding="5dp"
+            android:text="@string/CaO_calculation" />
+
+        <TextView
+            android:id="@+id/CaO_calculation_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/CaO_calculation_text"
+            android:layout_alignEnd="@+id/CaO_equivalent_EDTA"
+            android:layout_alignRight="@+id/CaO_equivalent_EDTA"
+            android:text=""
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/CaO_for_25cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/CaO_calculation_text"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/CaO_for_250cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/CaO_for_25cm3"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/Cement_weight_in_Cao_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/CaO_for_250cm3"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/cement_weight_text"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/Cement_weight_in_Cao_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CaO_for_250cm3"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/Cement_weight_in_Cao_text"
+            android:ems="10"
+            android:imeOptions="actionGo"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/CaO_percent_compute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cement_weight_in_Cao_value"
+            android:onClick="cao_percent"
+            android:padding="5dp"
+            android:text="Percentage of CaO : " />
+
+        <TextView
+            android:id="@+id/CaO_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/CaO_percent_compute"
+            android:layout_alignEnd="@+id/CaO_calculation_result"
+            android:layout_alignRight="@+id/CaO_calculation_result"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,189 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.india.chemistry.Viscosity_formula">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/timeOfLiquidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            android:text="@string/timeOfLiquid" />
+
+        <EditText
+            android:id="@+id/timeOfLiquidInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timeOfLiquidText"
+            android:layout_alignBottom="@+id/timeOfLiquidText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/timeOfLiquidText"
+            android:imeOptions="actionGo"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/timeOfWaterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/timeOfLiquidInput"
+            android:layout_marginTop="19dp"
+            android:layout_toLeftOf="@+id/timeOfLiquidInput"
+            android:text="@string/timeOfWaterText" />
+
+        <EditText
+            android:id="@+id/timeOfWaterInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timeOfLiquidInput"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/timeOfLiquidInput"
+            android:layout_alignTop="@id/timeOfWaterText"
+            android:imeOptions="actionGo"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/labTempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/timeOfWaterInput"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/labTempText" />
+
+        <EditText
+            android:id="@+id/labTempInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/labTempText"
+            android:layout_below="@id/timeOfWaterInput"
+            android:layout_toRightOf="@id/labTempText"
+            android:ems="10"
+            android:imeOptions="actionGo"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/viscosityHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/viscosityHeader"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/waterDensityInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/labTempInput"
+            android:layout_marginTop="45dp"
+            android:elevation="0dp"
+            android:ems="5"
+            android:imeOptions="actionGo"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/waterDensityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/labTempInput"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/waterDensityText" />
+
+        <EditText
+            android:id="@+id/waterViscosityInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/waterDensityInput"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/waterDensityInput"
+            android:layout_below="@+id/waterViscosity"
+            android:layout_marginTop="10dp"
+            android:ems="5"
+            android:imeOptions="actionGo"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:id="@+id/waterViscosity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/waterDensityInput"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            android:text="@string/waterViscosityText" />
+
+        <TextView
+            android:id="@+id/liquidDensityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/waterViscosityInput"
+
+            android:layout_marginTop="10dp"
+
+            android:text="@string/liquidDensityText" />
+
+        <EditText
+            android:id="@+id/liquidDensityInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/waterViscosityInput"
+            android:layout_alignRight="@id/waterViscosityInput"
+
+            android:layout_below="@id/liquidDensityText"
+            android:layout_marginTop="10dp"
+            android:height="15dp"
+            android:ems="10"
+            android:imeOptions="actionGo"
+            android:inputType="textPersonName|numberSigned|numberDecimal"
+            android:maxHeight="15dp" />
+
+        <Button
+            android:id="@+id/viscosityResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/liquidDensityInput"
+            android:layout_marginTop="25dp"
+            android:text="@string/viscosityresultText" />
+
+        <TextView
+            android:id="@+id/viscosityResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/viscosityResultText"
+            android:layout_alignTop="@id/viscosityResultText"
+            android:layout_toRightOf="@id/viscosityResultText"
+
+            android:text="TextView" />
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
